@@ -1,0 +1,25 @@
+{
+	"name": "kbsb-hcaptcha-cloudflare",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite --host 100.125.102.16",
+		"build": "vite build",
+		"preview": "vite preview --host 100.125.102.16"
+	},
+	"dependencies": {
+		"@hcaptcha/react-hcaptcha": "^1.4.4",
+		"classnames": "^2.3.2",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.19.6",
+		"@types/react": "^18.0.22",
+		"@types/react-dom": "^18.0.7",
+		"@vitejs/plugin-react": "^2.2.0",
+		"babel-loader": "^8.2.5",
+		"vite": "^3.2.0"
+	}
+}

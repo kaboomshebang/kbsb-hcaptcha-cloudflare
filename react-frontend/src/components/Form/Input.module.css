@@ -1,0 +1,49 @@
+.inputWrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+}
+
+.input {
+	all: unset;
+	padding: 0.7rem 1.5rem;
+
+	font-size: 1.25rem;
+	text-align: left;
+
+	color: black;
+	background-color: white;
+	border: 2px solid #eeeeee;
+}
+
+.input:focus {
+	border: 2px solid #111;
+}
+
+.label {
+	text-align: left;
+	font-size: 1.25rem;
+	font-weight: 400;
+	box-sizing: initial;
+}
+
+.label[focus='true'] {
+	text-decoration: underline;
+}
+
+@media only screen and (min-width: 600px) {
+	.inputWrapper {
+		flex-direction: row;
+		gap: 40px;
+	}
+
+	.input {
+		font-size: 2rem;
+	}
+
+	.label {
+		font-size: 1.5rem;
+	}
+}

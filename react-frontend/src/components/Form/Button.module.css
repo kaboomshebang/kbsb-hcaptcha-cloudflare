@@ -1,0 +1,44 @@
+.button {
+	all: unset;
+	border-radius: 5px;
+	padding: 0.6rem 1.2rem;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	font-weight: 700;
+	cursor: pointer;
+
+	transition: background-color 0.25s;
+}
+
+/* colors */
+
+.submit,
+.accept {
+	background-color: #7bd08e;
+}
+
+.neutral {
+	background-color: #bbd0e7;
+}
+
+.decline {
+	background-color: #d16565;
+}
+
+/* hovers */
+
+.button:hover {
+	background-color: #1a1a1a;
+}
+
+.button:focus,
+.button:focus-visible {
+	outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+	.button {
+		background-color: #eee;
+	}
+}

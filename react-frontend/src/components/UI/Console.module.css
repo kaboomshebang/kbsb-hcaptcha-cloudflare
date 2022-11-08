@@ -1,0 +1,12 @@
+.console {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+
+	width: 100%;
+	padding: 10px;
+
+	border-top: 1px solid #bbb;
+	background-color: #eee;
+	text-align: left;
+}

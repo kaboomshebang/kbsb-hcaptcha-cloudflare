@@ -1,0 +1,30 @@
+#root {
+	max-width: 720px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+main {
+	padding: 0 0 100px 0;
+}
+
+article {
+	padding: 50px 20px;
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 1.25rem;
+}
+
+hr {
+	border: 1px solid #eee;
+}
+
+p {
+	max-width: 600px;
+}
+
+code {
+	background-color: #eee;
+}
