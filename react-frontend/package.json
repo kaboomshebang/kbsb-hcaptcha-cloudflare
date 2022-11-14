@@ -4,9 +4,11 @@
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
-		"dev": "vite --host 100.125.102.16",
+		"dev": "vite",
+		"dev-vpn": "vite --host 100.125.102.16",
 		"build": "vite build",
-		"preview": "vite preview --host 100.125.102.16"
+		"preview": "vite preview",
+		"preview-vpn": "vite preview --host 100.125.102.16"
 	},
 	"dependencies": {
 		"@hcaptcha/react-hcaptcha": "^1.4.4",
