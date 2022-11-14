@@ -1,5 +1,58 @@
+.navWrapper {
+	position: relative;
+}
+
 .nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
+
+	padding: 20px 0;
+}
+
+.button {
+	all: unset;
+}
+
+.button img {
+	height: 25px;
+}
+
+.menu {
+	position: absolute;
+	top: -500%;
+	right: -20px;
+	background-color: #444;
+	color: #fff;
+	padding: 20px;
+	transition: top ease-in-out 200ms;
+}
+
+.menu header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.menu header h3,
+button {
+	margin: 0;
+	padding: 0;
+}
+
+.menu header button {
+	all: unset;
+	border: 1px solid #eee;
+	padding: 0.25rem 0.5rem;
+	font-weight: 700;
+}
+
+.menu p,
+h3 {
+	text-align: left;
+}
+
+.menu[data-show-menu='true'] {
+	top: 0;
 }
