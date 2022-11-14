@@ -5,6 +5,7 @@ import * as css from './Nav.module.css';
 export const Nav = () => {
 	const [showMenu, setShowMenu] = useState(false);
 
+	const kaboom = 'https://www.kaboomshebang.com';
 	const baseUrl = 'https://assets.kbsb.app/svg/';
 	const logo = 'kaboom_shebang_logo.svg';
 	const burger = 'icon_hamburger.svg';
@@ -16,7 +17,9 @@ export const Nav = () => {
 	return (
 		<div className={css.navWrapper}>
 			<nav className={css.nav}>
-				<img src={baseUrl + logo} alt="Kaboom Shebang" />
+				<a href={kaboom} target="_blank" rel="noopener noreferrer">
+					<img src={baseUrl + logo} alt="Kaboom Shebang" />
+				</a>
 				<button className={css.button} onClick={clickHandler}>
 					<img src={baseUrl + burger} alt="Burger" />
 				</button>
