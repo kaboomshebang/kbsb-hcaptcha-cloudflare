@@ -4,7 +4,7 @@ export const Console = (props) => {
 	return (
 		<div className={css.console}>
 			<div>
-				SERVER RESPONSE $&gt; <strong>{props.response}</strong>
+				<strong>{props.response}</strong>
 			</div>
 		</div>
 	);
