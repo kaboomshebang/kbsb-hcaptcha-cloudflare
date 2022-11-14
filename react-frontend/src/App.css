@@ -1,6 +1,7 @@
 #root {
 	max-width: 720px;
 	margin: 0 auto;
+	padding: 0 20px;
 	text-align: center;
 }
 
@@ -9,7 +10,7 @@ main {
 }
 
 article {
-	padding: 50px 20px;
+	padding: 50px 0;
 }
 
 h2 {
@@ -26,5 +27,5 @@ p {
 }
 
 code {
-	background-color: #eee;
+	background-color: #111;
 }
