@@ -11,23 +11,28 @@ const siteKey = import.meta.env.VITE_HCAPTCHA_SITEKEY;
 const endpoint = import.meta.env.VITE_ENDPOINT;
 
 export const Form = (props) => {
-	// you can use state to manually store the hCaptcha token (instead of FormData)
-	// const [token, setToken] = useState({});
+	// you can use also use state to manually store the hCaptcha token (instead of FormData)
+	const [verified, setVerified] = useState(false);
 	const form = useRef(null);
 
 	const submitHandler = async (event) => {
 		event.preventDefault();
-		const formData = new FormData(form.current);
 
-		const res = await fetch(endpoint, {
-			method: 'POST',
-			body: formData,
-			mode: 'cors',
-		});
-		const data = await res.json();
+		if (verified) {
+			const formData = new FormData(form.current);
 
-		// pass server response up to the console
-		props.onResponse(data.msg);
+			const res = await fetch(endpoint, {
+				method: 'POST',
+				body: formData,
+				mode: 'cors',
+			});
+			const data = await res.json();
+
+			// pass server response up to the console
+			props.onResponse(data.msg);
+		} else {
+			props.onResponse('⚠️ You forgot the hCaptcha puzzle.');
+		}
 	};
 
 	return (
@@ -56,7 +61,12 @@ export const Form = (props) => {
 						Reset
 					</button>
 				</div>
-				<HCaptcha sitekey={siteKey} onVerify={() => {}} />
+				<HCaptcha
+					sitekey={siteKey}
+					onVerify={() => {
+						setVerified(true);
+					}}
+				/>
 
 				{/* 
 				You can use onVerify attribute when using state to store the token. (instead of FormData)
