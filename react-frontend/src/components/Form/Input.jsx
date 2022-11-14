@@ -11,7 +11,6 @@ export const Input = (props) => {
 
 	const inputHandler = (event) => {
 		props.formDataHandler({ ...props.formData, [props.name]: event.target.value });
-		// console.log(props.name, event.target.value);
 	};
 
 	return (
