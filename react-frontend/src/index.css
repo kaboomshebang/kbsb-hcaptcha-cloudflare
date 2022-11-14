@@ -1,5 +1,14 @@
+@import 'https://assets.kbsb.app/fonts/ibm_plex_sans/font_ibm_plex_sans.css';
+
 :root {
-	font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+	font-family: 'IBM Plex Sans', sans-serif; /* weights: 300 400 600*/
+	font-feature-settings: 'kern' 1;
+	font-kerning: normal;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 400;
@@ -7,11 +16,6 @@
 	color-scheme: light dark;
 	color: #222;
 	background-color: #fff;
-
-	font-synthesis: none;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 }
 
 a {
